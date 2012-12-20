@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+{% if GO %}
+
+<meta http-equiv="REFRESH" content="3;url={{project.redirectURI}}">
+
+{% else %}
+
+<META HTTP-EQUIV="refresh" CONTENT="1">
+
+{% endif %}
+
+
+</HEAD>
+<BODY>
+
+{% if GO %}
+
+<h1>GO LIVE IN {{project.delay}} seconds!</h1>
+<img width="100%" src="/static/launch.jpg">
+{% else %}
+
+<h1>WAITING FOR {{project.name}} to GO LIVE!</h1>
+
+{% endif %}
+
+
+</BODY>
+</HTML>

@@ -20,6 +20,8 @@ class Project(models.Model):
 
     active = models.BooleanField(blank=True, verbose_name=_('This is the active project'))
 
+    golive = models.BooleanField(blank=True, verbose_name=_('We are going live?'))
+
     def __unicode__(self):
         return unicode("%s" % (self.name,))
 
